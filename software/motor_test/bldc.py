@@ -38,7 +38,8 @@ class ESC:
         :param throttle: Throttle value between min_throttle and max_throttle
         """
         if throttle < self.min_throttle or throttle > self.max_throttle:
-            raise ValueError(f"Throttle must be between {self.min_throttle} and {self.max_throttle}.")
+            print(f"Throttle must be between {self.min_throttle} and {self.max_throttle}.")
+            throttle = min(max(throttle, self.min_throttle), self.max_throttle)
 
         duty = self._throttle_to_duty(throttle)
         self.pwm.duty_u16(duty)
