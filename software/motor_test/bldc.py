@@ -2,7 +2,7 @@ import time
 from machine import Pin, PWM
 
 class ESC:
-    def __init__(self, pwm_pin, freq=50, min_throttle=1000, max_throttle=2000):
+    def __init__(self, pwm_pin, freq=50, min_throttle=1000, max_throttle=2000, min_running_throttle = 1080):
         """
         Initialize the ESC class.
 
@@ -16,6 +16,7 @@ class ESC:
 
         self.min_throttle = min_throttle
         self.max_throttle = max_throttle
+        self.min_running_throttle = min_running_throttle
 
         # Initialize ESC at minimum throttle
         self.set_throttle(self.min_throttle)
@@ -41,6 +42,11 @@ class ESC:
             print(f"Throttle must be between {self.min_throttle} and {self.max_throttle}.")
             throttle = min(max(throttle, self.min_throttle), self.max_throttle)
 
+        duty = self._throttle_to_duty(self.min_running_throttle)
+        self.pwm.duty_u16(duty)
+
+        time.sleep(0.1)
+        
         duty = self._throttle_to_duty(throttle)
         self.pwm.duty_u16(duty)
 
