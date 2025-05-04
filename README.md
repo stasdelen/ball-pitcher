@@ -3,7 +3,14 @@
 Automatic table-tennis ball pitcher machine, developed as the main assignment of ME407 – Mechanical Engineering Design at Middle East Technical University. Designed to let a single player practice with realistic spin, speed and trajectory control.
 ## Media
 
+### METU Mechanical Engineering LinkedIn 
 [![METU Mechanical Engineering LinkedIn](assets/linkedin-post.png)](https://www.linkedin.com/posts/odt%C3%BC-makina-m%C3%BChendisli%C4%9Fi-b%C3%B6l%C3%BCm%C3%BC-metu-department-of-mechanical-engineering_%C3%B6%C4%9Frencilerimizin-me-407-makina-m%C3%BChendisli%C4%9Fi-activity-7287756692912533504-VWZx)
+
+### Mode Shape 3: Modal Analysis Result
+
+![Mode Shape 3 – Modal Analysis Result](assets/spinning-wheels-mode3.gif)
+
+*Figure: Mode shape 3 from the modal analysis of the spinning‐wheel assembly, illustrating the natural vibration pattern at its associated eigenfrequency.*
 
 ## Repository Structure
 
