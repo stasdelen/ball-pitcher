@@ -8,7 +8,7 @@ Automatic table-tennis ball pitcher machine, developed as the main assignment of
 
 ### Mode Shape 3: Modal Analysis Result
 
-![Mode Shape 3 – Modal Analysis Result](assets/spinning-wheels-mode3.gif)
+![Mode Shape 3 – Modal Analysis Result](assets/mode3.gif)
 
 *Figure: Mode shape 3 from the modal analysis of the spinning‐wheel assembly, illustrating the natural vibration pattern at its associated eigenfrequency.*
 
